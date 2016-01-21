@@ -7,6 +7,9 @@ if __name__ == "__main__":
         print "usage: python plaid.py <name of edgelist file>"
         print "edgelist files like from snap.stanford.edu"
         print "big memory problems with the really really huge nets, tho"
+        sys.exit(1)
+    print "this is a sample of the first 2000 nodes of 8000 node network"
+    print "but you can see it's fractal"
     edgelist_file = sys.argv[1]
     adjmat = np.zeros((2000, 2000))
     line_num = 0
